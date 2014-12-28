@@ -1,0 +1,15 @@
+::content p > a {
+    color: blue;
+}
+
+x-element ::content p > a {
+    background-size: 100%;
+}
+
+::scoped x-element > div {
+    display: block;
+}
+
+::unscoped x-element > div {
+    display: flex;
+}

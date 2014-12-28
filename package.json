@@ -1,0 +1,42 @@
+{
+  "name": "gulp-polyfer",
+  "version": "0.0.0",
+  "description": "Gulp plugin to post process Polymer CSS polyfills with Polyfer",
+  "license": "MIT",
+  "repository": "heldr/gulp-polyfer",
+  "author": {
+    "name": "Helder Santana",
+    "url": "https://github.com/heldr"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "polyfer",
+    "polyfill",
+    "polymer",
+    "postcss",
+    "preprocessor",
+    "postprocessor",
+    "selectors",
+    "content",
+    "webcomponents",
+    "shadowdom",
+    "shadowcss"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "polyfer": "0.0.1",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}

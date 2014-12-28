@@ -1,0 +1,18 @@
+polyfill-next-selector { content: 'p > a'; } ::content p > a {
+    color: blue;
+}
+
+polyfill-next-selector { content: 'x-element p > a'; } x-element ::content p > a {
+    background-size: 100%;
+}
+
+polyfill-rule {
+    content: 'x-element > div';
+    display: block;
+}
+
+polyfill-unscoped-rule {
+    content: 'x-element > div';
+    display: flex;
+}
+
