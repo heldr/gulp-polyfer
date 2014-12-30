@@ -6,6 +6,10 @@ polyfill-next-selector { content: 'x-element p > a'; } x-element ::content p > a
     background-size: 100%;
 }
 
+polyfill-next-selector { content: 'x-element p > a'; } x-element ::content p > a {
+    border-radius: 1;
+}
+
 polyfill-rule {
     content: 'x-element > div';
     display: block;
@@ -14,5 +18,9 @@ polyfill-rule {
 polyfill-unscoped-rule {
     content: 'x-element > div';
     display: flex;
+}
+
+x-element /deep/ :focus {
+    outline: 0;
 }
 

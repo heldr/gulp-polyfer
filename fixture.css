@@ -6,10 +6,18 @@ x-element ::content p > a {
     background-size: 100%;
 }
 
-::scoped x-element > div {
+polyfill-next-selector { content: 'x-element p > a'; } x-element ::content p > a {
+    border-radius: 1;
+}
+
+:scoped x-element > div {
     display: block;
 }
 
-::unscoped x-element > div {
+:unscoped x-element > div {
     display: flex;
+}
+
+x-element :deep :focus {
+    outline: 0;
 }
